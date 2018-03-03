@@ -62,6 +62,7 @@ function removeFromCart(item) {
       }
     }
     i++
+    i = i;
   }while(i < cart.length){
     if (tfResult){
       cart.splice(i, 1 );
