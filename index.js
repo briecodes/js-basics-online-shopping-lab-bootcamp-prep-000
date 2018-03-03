@@ -53,11 +53,13 @@ function removeFromCart(item) {
   var foundSomething = '';
   let i = 0;
   do{
-    // if (Object.keys(cart[i])[0] === item){
-    // if (Object.keys(cart[i]).includes(item)){
-    if ( cart[i].hasOwnProperty(item) ){
-      foundSomething = i;
-      tfResult = true;
+    if (item){
+      // if (Object.keys(cart[i])[0] === item){
+      // if (Object.keys(cart[i]).includes(item)){
+      if ( cart[i].hasOwnProperty(item) ){
+        foundSomething = i;
+        tfResult = true;
+      }
     }
     i++
   }while(i < cart.length){
