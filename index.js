@@ -62,10 +62,9 @@ function removeFromCart(item) {
       }
     }
     i++
-    i = i;
   }while(i < cart.length){
     if (tfResult){
-      cart.splice(i, 1 );
+      cart.splice(foundSomething, 1 );
     }
     else{
       console.log("That item is not in your cart.");
